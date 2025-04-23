@@ -2,8 +2,14 @@ import streamlit as st
 import re
 
 st.set_page_config(page_title="password_strenght_meter",layout="wide",page_icon="🗂")
-st.title("PASSWORD STRENGTH METER")
-    
+st.title("PASSWORD STRENGTH METER📝")
+st.sidebar.title("REMINDER")
+st.sidebar.write("""A strong password should:\n
+✅ Be at least 8 characters long\n
+✅ Contain uppercase & lowercase letters\n
+✅ Include at least one digit (0-9)\n
+✅ Have one special character (@#$%^&*<>|!?/)""")
+
 
 #function to check strenght
 def check_password_strength(password):
